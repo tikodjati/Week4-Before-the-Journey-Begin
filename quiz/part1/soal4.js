@@ -8,7 +8,9 @@ Contoh:
 
 function totalDigitRekursif(angka) {
   // you can only write your code here!
-    
+    if(angka < 10) return angka;
+    return (angka % 10) + totalDigitRekursif(Math.floor(angka/10));
+    // 2 + 1 + 5
 }
 
 // TEST CASES
